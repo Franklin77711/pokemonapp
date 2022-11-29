@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'ARCADECLASSIC';
+    src: url("./Fonts/ARCADECLASSIC.TTF") format(truetype);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "ARCADECLASSIC";
+    letter-spacing: .1rem;
+    background: rgb(100,36,203);
+    background: linear-gradient(0deg, rgba(100,36,203,1) 0%, rgba(100,28,124,1) 40%, rgba(44,12,60,1) 70%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+#current-search{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#current-api-response{
+    position: relative;
+    width: 17rem;
+}
+
+#last-search{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#last-search > h2{
+padding-left: 10px;
+color: white;
+}
+.poke-img{
+    width: 100%;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+}
+
+.history-response{
+    width: 10rem;
+    position: relative;
+}
+.card-div{
+    background-color: rgba(255,194	,72, 1);
+    border: 3px solid #e2e2e2;
+    border-radius: 10%;
+    margin: 10px;
+}
+#submitInp, #submitBtn{
+    font-family: "ARCADECLASSIC";
+    letter-spacing: .1rem;
+    background-color: rgba(239,57,57, 1);
+    font-size: 24px;
+    color: white;
+    border: 3px solid #e2e2e2;
+    border-radius: 10%;
+}
+#history-cards{
+    display: flex;
+}
+
+.stats{
+    font-size: 22px;
+    position:absolute;
+    font-weight: 500;
+}
+
+.stats:nth-child(2){
+    color: red;
+    bottom: 10%;
+    left: 7%;
+
+}
+.stats:nth-child(3){
+    color: green;
+    bottom: 10%;
+    right: 10%;
+}
+.stats:nth-child(4){
+    color: gray;
+    top: 7%;
+    left: 7%;
+}
+.stats:last-child{
+    color: blue;
+    top: 7%;
+    right: 10%;
+}
+.history-response > .stats{
+    font-size: 18px;
+}
