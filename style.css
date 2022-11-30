@@ -16,7 +16,6 @@ body{
 }
 
 
-
 #current-search{
     width: 100%;
     text-align: center;
@@ -29,6 +28,7 @@ body{
 #current-api-response{
     position: relative;
     width: 17rem;
+    height: 272px;
 }
 
 #last-search{
@@ -48,7 +48,7 @@ color: white;
 }
 
 .history-response{
-    width: 10rem;
+    min-width: 10rem;
     position: relative;
 }
 .card-div{
@@ -68,6 +68,9 @@ color: white;
 }
 #history-cards{
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
 }
 
 .stats{
@@ -78,25 +81,33 @@ color: white;
 
 .stats:nth-child(2){
     color: red;
-    bottom: 10%;
-    left: 7%;
+    bottom: -10px;
+    left: 2%;
 
 }
 .stats:nth-child(3){
     color: green;
-    bottom: 10%;
-    right: 10%;
+    bottom: -10px;
+    right: 2%;
 }
 .stats:nth-child(4){
     color: gray;
-    top: 7%;
-    left: 7%;
+    top: -10px;
+    left: 2%;
 }
 .stats:last-child{
     color: blue;
-    top: 7%;
-    right: 10%;
+    top: -10px;
+    right: 2%;
 }
 .history-response > .stats{
     font-size: 18px;
+}
+
+#page-message{
+    position: absolute;
+    color:red;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 40%;
 }
